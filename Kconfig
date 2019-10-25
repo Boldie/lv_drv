@@ -1,0 +1,63 @@
+menu "LVGL ESP32 TFT driver ili9341/xpt2046"
+
+config LVGL_DRV_DISP_TP_SPI_MISO
+    int "MISO PIN"
+    default 19
+    help
+    MISO Pin of Display and touch device
+
+config LVGL_DRV_DISP_TP_SPI_MOSI
+    int "MOSI PIN"
+    default 23
+    help
+    MOSI Pin of Display and touch device
+
+config LVGL_DRV_DISP_TP_SPI_CLK
+    int "SPI CLK PIN"
+    default 18
+    help
+    SPI Clk Pin of Display and touch device
+
+config LVGL_DRV_DISP_SPI_CS
+    int "CS Display"
+    default 14
+    help
+    CS of the display device on SPI bus
+
+config LVGL_DRV_TP_SPI_CS
+    int "CS Touch"
+    default 12
+    help
+    CS of the touch device on spi bus
+
+config LVGL_DRV_ILI9341_DC
+    int "DC pin of display"
+    default 27
+    help
+    DC pin of display
+
+config LVGL_DRV_ILI9341_RST
+    int "Reset pin of display"
+    default 33
+    help
+    DC pin of display
+
+config LVGL_DRV_ILI9341_BCKL
+    int "Backlight pin of display"
+    default 5
+    help
+    Pin of display for backlight on
+
+config LVGL_DRV_ILI9341_BCKL_ACTIVE_LVL
+    int "Display backlight gpio level"
+    default 0
+    help
+    Level of backlight to turn it on.
+
+config LVGL_DRV_ILI9341_INVERT_DISPLAY
+    int "Invert direction of display"
+    default 0
+    help
+    if text/images are backwards, try setting this to 1
+
+endmenu
